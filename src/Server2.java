@@ -5,11 +5,11 @@ import java.util.List;
 // https://gist.github.com/chatton/14110d2550126b12c0254501dde73616
 
 
-public class Server implements Runnable{
+public class Server2 implements Runnable{
     @Override
     public void run() {
         try{
-            ServerSocket serverSocket = new ServerSocket(4998);
+            ServerSocket serverSocket = new ServerSocket(4999);
             Socket socket = serverSocket.accept();
             System.out.println("Server Started: Right");
             System.out.println("Client Connected: " + socket);
