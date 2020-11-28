@@ -12,12 +12,12 @@ public class startServers {
         server2.start();
     }
 
-    public void restartServer1(){
+    public static void restartServer1(){
         Thread server1 = new Thread((Runnable) Server1);
         server1.start();
     }
 
-    public void restartServer2(){
+    public static void restartServer2(){
         Thread server2 = new Thread((Runnable) Server2);
         server2.start();
     }

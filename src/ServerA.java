@@ -33,6 +33,7 @@ public class ServerA implements Runnable{
             System.out.println("Closing Server A\n");
             serverSocket.close();
             socket.close();
+            startServers.restartServer1();
         }catch (IOException | ClassNotFoundException e){
             System.out.print("ERROR");
         }
