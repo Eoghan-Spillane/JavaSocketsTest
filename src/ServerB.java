@@ -5,14 +5,17 @@ import java.util.List;
 // https://gist.github.com/chatton/14110d2550126b12c0254501dde73616
 
 
-public class Server implements Runnable{
+public class ServerB implements Runnable{
     @Override
     public void run() {
+
+        System.out.println("Server Started: B");
+
         try{
-            ServerSocket serverSocket = new ServerSocket(4998);
+            ServerSocket serverSocket = new ServerSocket(4999);
             Socket socket = serverSocket.accept();
-            System.out.println("Server Started: Right");
-            System.out.println("Client Connected: " + socket);
+
+            System.out.println("\nClient Connected To B: " + socket);
 
             InputStream inputStream = socket.getInputStream();
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
@@ -28,7 +31,7 @@ public class Server implements Runnable{
                 System.out.println(car.toString());
             }
 
-            System.out.println("Closing Sockets\n");
+            System.out.println("Closing Server B\n");
             serverSocket.close();
             socket.close();
         }catch (IOException | ClassNotFoundException e){

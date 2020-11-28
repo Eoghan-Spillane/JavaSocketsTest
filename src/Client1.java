@@ -6,7 +6,7 @@ import java.util.List;
 // https://gist.github.com/chatton/14110d2550126b12c0254501dde73616
 
 
-public class Client {
+public class Client1 {
 
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("localhost", 4999);
