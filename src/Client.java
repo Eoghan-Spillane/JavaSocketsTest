@@ -10,6 +10,7 @@ public class Client {
         Socket socket = new Socket("localhost", 4999);
         System.out.println("Connected");
 
+        //Object to be sent must be created first
         Car ford = new Car("ford", 2006);
 
         OutputStream outputStream = socket.getOutputStream();

@@ -15,6 +15,9 @@ public class Server {
         InputStream inputStream = socket.getInputStream();
         ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
 
+
+
+        //Variables must be created on the server for the incoming objects to be added to it.
         Car incomingCar = (Car) objectInputStream.readObject();
         System.out.println(incomingCar.toString());
 
