@@ -1,3 +1,5 @@
+package Sockets;
+
 import java.io.Serializable;
 
 public class Car implements Serializable {
@@ -19,6 +21,6 @@ public class Car implements Serializable {
 
     @Override
     public String toString() {
-        return "Car{" + "name='" + name + '\'' + ", year=" + year + '}';
+        return "Sockets.Car{" + "name='" + name + '\'' + ", year=" + year + '}';
     }
 }
