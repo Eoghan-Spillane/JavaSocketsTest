@@ -1,5 +1,5 @@
 package rmiClient;
-
+//https://www.youtube.com/watch?v=FX5hR-np-sg
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.Scanner;
